@@ -18,6 +18,7 @@ export class NavbarComponent implements OnInit {
     { route: '/students', title: 'סטודנטים' },
     { route: '/contact', title: 'צור קשר' },
     { route: '/brightness', title: 'נגישות' },
+    { route: '/clients', title: 'לקוחות' },
   ];
   constructor(private router: Router) {
     this.router.events.subscribe((event) => {

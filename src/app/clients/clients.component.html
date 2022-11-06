@@ -1,0 +1,31 @@
+<h1>טבלת משמשים({{ clients.length }})</h1>
+<!-- <input type="search" placeholder="search" /> -->
+<table>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>שם מלא</th>
+      <th>שעה</th>
+      <th>תאריך לידה</th>
+      <th>טלפון</th>
+      <th>אימייל</th>
+      <th>עיר</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr
+      *ngFor="let u of clients; let i = index"
+      [style.color]="'hsl(' + i * 15 + ',63%,35%)'"
+    >
+      <td>
+        {{ i + 1 }}
+      </td>
+      <td>{{ u.firstName }} {{ u.lastName }}</td>
+      <td>{{ u.time | date: "h:mm a" }}</td>
+      <td>{{ u.birthday | date: "dd/MM/yyyy" }}</td>
+      <td>{{ u.phone }}</td>
+      <td>{{ u.email }}</td>
+      <td>{{ u.city }}</td>
+    </tr>
+  </tbody>
+</table>

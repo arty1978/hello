@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -17,6 +18,7 @@ import { RangeComponent } from './range/range.component';
 import { BrightnessComponent } from './brightness/brightness.component';
 import { SearchPipe } from './search.pipe';
 import { MyNumberPipe } from './my-number.pipe';
+import { ClientsComponent } from './clients/clients.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,8 +33,14 @@ import { MyNumberPipe } from './my-number.pipe';
     BrightnessComponent,
     SearchPipe,
     MyNumberPipe,
+    ClientsComponent,
   ],
-  imports: [BrowserModule, FormsModule, RouterModule.forRoot(routes)],
+  imports: [
+    BrowserModule,
+    FormsModule,
+    HttpClientModule,
+    RouterModule.forRoot(routes),
+  ],
   providers: [UtilityService],
   bootstrap: [AppComponent],
 })
