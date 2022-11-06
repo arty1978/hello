@@ -1,0 +1,16 @@
+<div>
+  <input
+    [(ngModel)]="value"
+    type="number"
+    [min]="min"
+    [max]="max"
+    (input)="change()"
+  />
+  <input
+    [(ngModel)]="value"
+    type="range"
+    [min]="min"
+    [max]="max"
+    (input)="change()"
+  />
+</div>

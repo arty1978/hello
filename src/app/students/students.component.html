@@ -1,0 +1,12 @@
+<div class="list">
+  <ol>
+    <li *ngFor="let item of students; let i = index" (click)="removeStudent(i)">
+      {{ item }}
+    </li>
+  </ol>
+  <input
+    [(ngModel)]="student"
+    placeholder="new student"
+    (keyup.enter)="addStudent()"
+  />
+</div>

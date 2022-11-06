@@ -1,0 +1,20 @@
+nav {
+  background-color: teal;
+  color: white;
+}
+a {
+  padding: 16px;
+  display: inline-block;
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+}
+a.active {
+  color: #eda09b8d;
+  font-weight: bolder;
+  text-shadow: 0 0 0.2px #f5b5af8d;
+  /* text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; */
+}
+a:hover {
+  background-color: #ffffff56;
+}

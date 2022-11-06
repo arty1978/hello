@@ -1,0 +1,12 @@
+<div class="alertFrame" *ngIf="utility.isAlertActivated">
+  <div class="alert">
+    <header>
+      <button class="close" (click)="utility.isAlertActivated = false">
+        X
+      </button>
+    </header>
+
+    <div class="content">{{ utility.alertText }}</div>
+    <!-- <div class="content">{{contact.alertText }}</div> -->
+  </div>
+</div>

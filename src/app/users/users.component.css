@@ -1,0 +1,48 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+th {
+  background-color: #333;
+  color: white;
+  border-right: solid black 0.5px;
+}
+
+th,
+td {
+  padding: 6px 8px;
+  width: 10%;
+  white-space: nowrap;
+}
+
+tr:nth-child(even) {
+  background-color: #ccc;
+}
+.green {
+  color: green;
+  font-weight: 800;
+}
+.red {
+  font-weight: 800;
+  color: red;
+}
+td:last-child > span {
+  transition: 0.3s;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.isActive {
+  scale: 3;
+  background-color: white;
+  border-radius: 50%;
+  line-height: 0.8;
+  padding: 0 3px 2px 3px;
+  box-shadow: 0 0 2px 2px;
+}
+input[type="search"] {
+  padding: 6px;
+  margin-bottom: 8px;
+}
