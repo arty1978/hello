@@ -1,9 +1,11 @@
 import { Injectable } from '@angular/core';
+import { UserLoggedin } from './app.component';
 
 @Injectable({
   providedIn: 'root',
 })
 export class UtilityService {
+  user: UserLoggedin | undefined;
   isAlertActivated: boolean;
   alertText: string;
 

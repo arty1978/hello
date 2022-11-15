@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 
@@ -19,6 +19,10 @@ import { BrightnessComponent } from './brightness/brightness.component';
 import { SearchPipe } from './search.pipe';
 import { MyNumberPipe } from './my-number.pipe';
 import { ClientsComponent } from './clients/clients.component';
+import { SupportComponent } from './support/support.component';
+import { SupporManageComponent } from './support-manage/suppor-manage.component';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,12 +38,17 @@ import { ClientsComponent } from './clients/clients.component';
     SearchPipe,
     MyNumberPipe,
     ClientsComponent,
+    SupportComponent,
+    SupporManageComponent,
+    LoginComponent,
+    RegisterComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpClientModule,
     RouterModule.forRoot(routes),
+    ReactiveFormsModule,
   ],
   providers: [UtilityService],
   bootstrap: [AppComponent],

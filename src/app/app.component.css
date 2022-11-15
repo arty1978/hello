@@ -3,3 +3,11 @@
   margin: 0;
   padding: 0;
 }
+a {
+  padding: 10px;
+}
+a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  color: blue;
+}

@@ -1,5 +1,5 @@
 export interface Client {
-  id: number;
+  id: number | null;
   firstName: string;
   lastName: string;
   time: string;
@@ -7,4 +7,5 @@ export interface Client {
   phone: string;
   email: string;
   city: string;
+  isEditState?: boolean;
 }

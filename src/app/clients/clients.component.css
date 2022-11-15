@@ -1,3 +1,8 @@
+input[type="search"] {
+  padding: 6px;
+  margin-bottom: 8px;
+}
+
 table {
   width: 100%;
   border-collapse: collapse;
@@ -10,7 +15,7 @@ th {
 }
 th,
 td {
-  padding: 8px 8px;
+  padding: 6px 8px;
   width: 10%;
   white-space: nowrap;
 }
@@ -30,3 +35,67 @@ h1 {
   background-clip: text;
   color: transparent;
 }
+tr td:last-child {
+  width: 10px;
+  text-align: left;
+}
+
+.remove {
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.remove:hover {
+  background: #c65454;
+}
+
+.remove:active {
+  scale: 1.5;
+}
+
+/* table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  background-color: #037d9b;
+  color: white;
+}
+
+th,
+td {
+  padding: 6px 8px;
+  width: 10%;
+  white-space: nowrap;
+}
+
+tr:nth-child(even) {
+  background-color: #ccc;
+}
+
+td:last-child > span {
+  transition: 0.3s;
+  display: inline-block;
+  cursor: pointer;
+}
+.remove {
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.remove:hover {
+  background: #c65454;
+}
+
+.remove:active {
+  scale: 1.5;
+} */

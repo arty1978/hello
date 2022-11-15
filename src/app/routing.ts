@@ -6,6 +6,10 @@ import { ContactComponent } from './contact/contact.component';
 import { BrightnessComponent } from './brightness/brightness.component';
 import { StudentsComponent } from './students/students.component';
 import { ClientsComponent } from './clients/clients.component';
+import { SupportComponent } from './support/support.component';
+import { SupporManageComponent } from './support-manage/suppor-manage.component';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
 
 export const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -15,4 +19,8 @@ export const routes: Routes = [
   { path: 'contact', component: ContactComponent },
   { path: 'brightness', component: BrightnessComponent },
   { path: 'clients', component: ClientsComponent },
+  { path: 'support', component: SupportComponent },
+  { path: 'support-manage/:status', component: SupporManageComponent },
+  { path: 'login', component: LoginComponent },
+  { path: 'register', component: RegisterComponent },
 ];
